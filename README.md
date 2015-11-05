@@ -23,8 +23,8 @@
 ## Implementation
 
 ### Model
-* pclist.swift
-* status.swift
+* Pclist.swift
+* Status.swift
 
 ### View
 * PcUITableView
