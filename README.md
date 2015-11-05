@@ -7,11 +7,11 @@
 * To manage my computer from anywhere.
 
 ## Features
-* Take a screenshot of a PC.
+* Take a screenshot of PCs.
 * Turn off.
 * Check what programs are running.
 * Terminate a program.
-* Send a message to PC.
+* Send a message to PCs.
 
 ## Control Flow
 * User adds IP addresses and name of the PCs.
