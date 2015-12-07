@@ -75,6 +75,56 @@ class processView: UIViewController
         textView.text = processString
     }
     
+    @IBAction func killProcess(sender: AnyObject)
+    {
+        let alert = UIAlertController(title: "Terminate Process",
+            message: "pid to terminate",
+            preferredStyle: .Alert)
+        
+        let saveAction = UIAlertAction(title: "Kill",
+            style: .Default,
+            handler: { (action:UIAlertAction) -> Void in
+                
+                let textField = alert.textFields!.first
+                
+                let client:TCPClient = TCPClient(addr: self.ip!, port: Int(self.port!))
+                var (success, _)=client.connect(timeout: 1)
+                
+                if success
+                {
+                    var (success, errmsg)=client.send(str:"terminateProcess|"+textField!.text!)
+                    if success
+                    {
+                        //print(textField!.text)
+                    }
+                    else
+                    {
+                        
+                    }
+                }
+                else
+                {
+                    
+                }
+        })
+        
+        let cancelAction = UIAlertAction(title: "Cancel",
+            style: .Default) { (action: UIAlertAction) -> Void in
+        }
+        
+        alert.addTextFieldWithConfigurationHandler {
+            (textField: UITextField) -> Void in
+        }
+        
+        alert.addAction(saveAction)
+        alert.addAction(cancelAction)
+        
+        presentViewController(alert,
+            animated: true,
+            completion: nil)
+
+    }
+    
     override func viewDidLoad()
     {
         super.viewDidLoad()

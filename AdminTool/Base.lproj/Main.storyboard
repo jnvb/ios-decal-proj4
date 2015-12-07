@@ -205,6 +205,9 @@
                                 <rect key="frame" x="250" y="242" width="101" height="30"/>
                                 <animations/>
                                 <state key="normal" title="Send Message"/>
+                                <connections>
+                                    <action selector="sendMessage:" destination="0fP-9W-NGR" eventType="touchUpInside" id="XQO-f5-Br4"/>
+                                </connections>
                             </button>
                         </subviews>
                         <animations/>
@@ -223,7 +226,11 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="processBtn" destination="8W0-2r-ues" id="ttV-v6-Z3g"/>
+                        <outlet property="screenShotBtn" destination="5fU-Fw-cwB" id="Yj9-5t-IES"/>
+                        <outlet property="sendMessageBtn" destination="C7K-w9-5VG" id="cbZ-cE-6Jz"/>
                         <outlet property="statusLabel" destination="cZM-SR-tVl" id="0ek-eB-WAR"/>
+                        <outlet property="turnOffBtn" destination="dDd-ck-gZX" id="dwU-0q-Kpm"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Smb-4k-09K" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -258,6 +265,13 @@
                             <constraint firstItem="Rcq-ms-CPj" firstAttribute="bottom" secondItem="w5P-VC-Ke5" secondAttribute="top" id="mJv-Ru-RrX"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="IPd-bA-Q8v">
+                        <barButtonItem key="rightBarButtonItem" title="Kill" id="Fgw-S7-vwv">
+                            <connections>
+                                <action selector="killProcess:" destination="xRP-PA-Kac" id="pGZ-HR-PUg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="textView" destination="Rcq-ms-CPj" id="dbw-DK-MPB"/>
                     </connections>
