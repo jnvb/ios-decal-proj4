@@ -1,5 +1,10 @@
 # Administrative Tool
 
+## Usage
+* Open AdminTool.exe on windows.
+* Add IP address of your pc in the app.
+* Add Port (default: 1234)
+
 ## Authors
 * Hojoon Lee
 
