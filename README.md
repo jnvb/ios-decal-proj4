@@ -23,13 +23,21 @@
 ## Implementation
 
 ### Model
-* Pclist.swift
-* Status.swift
+* AppDelegate.swift
+* ytcpsocket.c
+* ysocket.swift
+* ytcpsocket.swift
+* ViewController.swift
+* StatusView.swift
+* ScreenshotView.swift
+* ProcessView.swift
+* AddView.swift
 
 ### View
-* PcUITableView
-* StatusUIView
+* StatusView
+* ScreenshotView
+* ProcessView
+* AddView
 
 ### Controller
-* PcUITableViewController
-* StatusUIViewController
+* ViewController
