@@ -127,7 +127,7 @@ class StatusView: UIViewController
         if success
         {
 //Change before realease: shutdownTest -> shutdown
-            var (success, errmsg)=client.send(str:"shutdownTest")
+            var (success, errmsg)=client.send(str:"shutdown")
             if success
             {
                 statusLabel.text = "Status: Off"
